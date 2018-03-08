@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>1.0.0</modelVersion>
+    <groupId>com.liwei</groupId>
+    <artifactId>dubbo-base</artifactId>
+    <version>${dubbo.study.version}</version>
+    <packaging>pom</packaging>
+    <properties>
+        <dubbo.studype.version>1.0</dubbo.studype.version>
+        <dubbo.package.version>dubbo-study</dubbo.package.version>
+        <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
+        <jdk.version>1.7</jdk.version>
+        <servlet.version>3.0.1</servlet.version>
+        <spring.version>4.1.6.RELEASE</spring.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <!--依赖包管理器-->
+    <dependencyManagement>
+        <dependencies>
+
+            <!--<dependency>-->
+                <!--<groupId>com.cairenhui</groupId>-->
+                <!--<artifactId>asclient</artifactId>-->
+                <!--<version>2.1.1</version>-->
+            <!--</dependency>-->
+        </dependencies>
+    </dependencyManagement>
+
+
+    <!--内部模块-->
+    <modules>
+        <module>dubbo-core</module>
+        <module>dubbo-service</module>
+        <module>dubbo-web</module>
+
+    </modules>
+    <!--外部项目-->
+    <profiles>
+        <!--<profile>-->
+            <!--<id>snp</id>-->
+            <!--<activation>-->
+                <!--<activeByDefault>true</activeByDefault>-->
+            <!--</activation>-->
+            <!--<modules>-->
+                <!--<module>../../xpe-products-snp</module>-->
+            <!--</modules>-->
+        <!--</profile>-->
+    </profiles>
+</project>
