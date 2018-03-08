@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>1.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
     <groupId>com.liwei</groupId>
-    <artifactId>dubbo-base</artifactId>
+    <artifactId>dubbo-study</artifactId>
     <version>${dubbo.study.version}</version>
     <packaging>pom</packaging>
     <properties>
-        <dubbo.studype.version>1.0</dubbo.studype.version>
+        <dubbo.study.version>1.0-SNAPSHOT</dubbo.study.version>
         <dubbo.package.version>dubbo-study</dubbo.package.version>
         <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
         <jdk.version>1.7</jdk.version>
@@ -17,12 +17,59 @@
     <!--依赖包管理器-->
     <dependencyManagement>
         <dependencies>
-
-            <!--<dependency>-->
-                <!--<groupId>com.cairenhui</groupId>-->
-                <!--<artifactId>asclient</artifactId>-->
-                <!--<version>2.1.1</version>-->
-            <!--</dependency>-->
+            <!--dubbo-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>2.5.3</version>
+            </dependency>
+            <!--dubbo相关依赖-->
+            <dependency>
+                <groupId>commons-httpclient</groupId>
+                <artifactId>commons-httpclient</artifactId>
+                <version>3.1</version>
+            </dependency>
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>2.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.thoughtworks.xstream</groupId>
+                <artifactId>xstream</artifactId>
+                <version>1.4.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.33</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jfree</groupId>
+                <artifactId>jfreechart</artifactId>
+                <version>1.0.19</version>
+            </dependency>
+            <dependency>
+                <groupId>com.caucho</groupId>
+                <artifactId>hessian</artifactId>
+                <version>4.0.7</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>3.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-frontend-jaxws</artifactId>
+                <version>2.6.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.thrift</groupId>
+                <artifactId>libthrift</artifactId>
+                <version>0.8.0</version>
+            </dependency>
+            <!--dubbo相关依赖结束-->
         </dependencies>
     </dependencyManagement>
 
