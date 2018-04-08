@@ -8,6 +8,6 @@ import com.liwei.service.GetMoneyService;
 public class GetMoneyServiceImpl implements GetMoneyService{
 
     public String get() {
-        return "success";
+        return "success20881";
     }
 }
