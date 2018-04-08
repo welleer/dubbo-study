@@ -7,6 +7,6 @@ import com.liwei.service.SaveMoneyService;
  */
 public class SaveMoneyServiceImpl implements SaveMoneyService{
     public String save() {
-        return "success";
+        return "success-save";
     }
 }
